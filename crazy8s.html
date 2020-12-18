@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+  href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="crazy8s.css">
+
+<title>Crazy 8's</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4 text-center">Crazy 8's</h1>
+            </div>
+        </div>
+            <div id="game-lobby">
+                <div id="card-fan" class="row justify-content-center text-center">
+                    <img src="cardFan.jpg" alt="hand of cards">
+                </div>
+                <div class="" id="game-start-btns">
+                    <div id = "game-start" class="row justify-content-center">
+                        <div class="col-6 justify-content-center text-center">
+                            <button id="game-start-btn" class = "btn btn-success m-2">Start a Game</button>
+                        </div>
+                        <div class="col-6 justify-content-center text-center">
+                            <button id = "join-game-btn" class = "btn btn-primary m-2">Join a Game</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="start-btn-clicked">
+                    <div class="alert-warning">Game Code to Give to Other Players: <span id="show-game-code"></span>&nbsp;
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="join-btn-clicked">
+                    <form id="get-game-code">
+                        <div class="alert-danger">Enter game code: <input type="text" id = "game-num-input" name = "game-num-input"></input>&nbsp;
+                        <button type="submit" class = "btn btn-success">Deal Me In!</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        
+        <div id = "card-game-area">
+            <div class="row" id="actions buttons">
+            
+                <div class="col-4 justify-content-center text-center">
+                    <button id = "dreal-btn" class = "btn btn-primary m-2">Deal</button>
+                </div>
+                
+                <div class="col-4 justify-content-center text-center">
+                    <button id = "draw-btn" class = "btn btn-danger m-2">Draw</button>
+                </div>
+                <div class="col-4 justify-content-center text-center">
+                    <button id = "play-card-btn" class = "btn btn-success m-2">Play card</button>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="card-table-area">
+                <div class="col-12 ">
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src='crazy8s.js'></script>
+</body>
+</html>
